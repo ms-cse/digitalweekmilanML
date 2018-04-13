@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "json/{name}",
+      "connection": "fd73f4103955dsvm_STORAGE"
+    },
+    {
+      "type": "blob",
+      "name": "myOutputBlob",
+      "path": "flatjson/{name}",
+      "connection": "fd73f4103955dsvm_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

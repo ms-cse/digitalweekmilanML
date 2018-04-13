@@ -1,0 +1,9 @@
+{
+    "frameworks": {
+      "net46": {
+        "dependencies": {
+          "Ghostscript.NET": "1.2.1"
+        }
+      }
+    }
+  }

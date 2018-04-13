@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "image",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "images/{name}",
+      "connection": "fd73f4103955dsvm_STORAGE"
+    },
+    {
+      "type": "blob",
+      "name": "json",
+      "path": "json/{name}",
+      "connection": "fd73f4103955dsvm_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

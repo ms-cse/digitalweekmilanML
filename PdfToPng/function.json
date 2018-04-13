@@ -1,0 +1,19 @@
+{
+    "bindings": [
+      {
+        "name": "pdfinput",
+        "type": "blobTrigger",
+        "direction": "in",
+        "path": "invoices/{name}",
+        "connection": "fd73f4103955dsvm_STORAGE"
+      },
+      {
+        "type": "blob",
+        "name": "png",
+        "path": "images/{name}",
+        "connection": "AzureWebJobsDashboard",
+        "direction": "out"
+      }
+    ],
+    "disabled": false
+  }
