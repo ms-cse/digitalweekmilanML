@@ -18,3 +18,7 @@ You should have three files in that folder:
 -  Ghostscfript.NET.xml
 -  gsdll32.dll (the file you just uploaded).
 
+## More info ##
+If you want to get to know more about this approach just have a look at the detailed [blog post](https://medium.com/@codeprincess/machine-learning-is-like-washing-clothes-383859f2e94) :)
+And if you want to get in contact with the people who commited this crime, ping @codeprincess and @jeroenterheerdt.
+
