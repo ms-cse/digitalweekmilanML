@@ -1,8 +1,14 @@
+# Data cleaning made serverless #
+
 This repo contains the code for running the OCR PDF pipeline in Azure functions.
 We defined three Azure functions in one function app and they work in this order:
 1. **PdfToPng** - reads a PDF once uploaded in blob storage 'invoices' container, converts it to PNG and outputs it in 'images' container.
 2. **PngToOcr** - reads a PNG once created in the 'images' container, puts it through Cognitive Services OCR and creates a json with the result in 'json' container.
 3. **OcrToFlat** - reads a JSON once created in the 'json' container, flattens it and outputs it in in the 'flatjson' container.
+
+<p align="center">
+<img src="https://drive.google.com/uc?id=18qkU1S1PEiKo1foYQfWpMF2Br5bJl40C" width="800">
+</p>
 
 Together these three functions will run in the correct order once a PDF is uploaded in the 'invoices' container.
 
